@@ -6,7 +6,7 @@ import br.com.alura.screenmatch.modelos.Titulo;
 
 public class CatalogoSerie {
     public static void exibirSerie () {
-        Serie lost = new Serie();
+        var lost = new Serie();
         lost.setNome("Lost");
         lost.setAnoDeLancamento(2000);
         lost.exibeFichaTecnica();
@@ -19,6 +19,7 @@ public class CatalogoSerie {
         episodio.setNumero(1);
         episodio.setSerie(lost);
         episodio.setTotalVisualizacoes(300);
+        System.out.println();
 
     }
 }
