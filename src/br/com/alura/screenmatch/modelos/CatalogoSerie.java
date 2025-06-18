@@ -1,13 +1,12 @@
 package br.com.alura.screenmatch.modelos;
+
 import br.com.alura.screenmatch.calculos.CalculadoraDeTempo;
-import br.com.alura.screenmatch.calculos.FiltroRecomendacao;
-import br.com.alura.screenmatch.modelos.Episodio;
-import br.com.alura.screenmatch.modelos.Filme;
 import br.com.alura.screenmatch.modelos.Serie;
+import br.com.alura.screenmatch.modelos.Titulo;
 
-public class catalogo {
-
-    Serie lost = new Serie();
+public class CatalogoSerie {
+    public static void exibirSerie () {
+        Serie lost = new Serie();
         lost.setNome("Lost");
         lost.setAnoDeLancamento(2000);
         lost.exibeFichaTecnica();
@@ -16,18 +15,10 @@ public class catalogo {
         lost.setMinutosPorEpisodio(50);
         System.out.println("Duração para maratonar Lost: " + lost.getDuracaoEmMinutos());
 
-    CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
-        calculadora.inclui(meuFilme);
-        calculadora.inclui(outroFilme);
-        calculadora.inclui(lost);
-        System.out.println(calculadora.getTempoTotal());
-
-    Episodio episodio = new Episodio();
+        Episodio episodio = new Episodio();
         episodio.setNumero(1);
         episodio.setSerie(lost);
         episodio.setTotalVisualizacoes(300);
-        filtro.filtra(episodio);
 
-
-
+    }
 }

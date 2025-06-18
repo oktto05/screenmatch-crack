@@ -1,4 +1,5 @@
 package br.com.alura.screenmatch.modelos;
+import java.util.List;
 
 public class Titulo {
     private String nome;
