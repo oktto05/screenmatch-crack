@@ -9,7 +9,6 @@ public class CatalogoFilme {
         meuFilme.setNome("O poderoso chefão");
         meuFilme.setAnoDeLancamento(1970);
         meuFilme.setDuracaoEmMinutos(180);
-        System.out.println("Duração do filme: " + meuFilme.getDuracaoEmMinutos());
 
         meuFilme.exibeFichaTecnica();
         meuFilme.avalia(8);
@@ -22,7 +21,13 @@ public class CatalogoFilme {
         outroFilme.setNome("Avatar");
         outroFilme.setAnoDeLancamento(2023);
         outroFilme.setDuracaoEmMinutos(200);
+
         outroFilme.exibeFichaTecnica();
+        outroFilme.avalia(10);
+        outroFilme.avalia(9.5);
+        outroFilme.avalia(9.8);
+        System.out.println("Total de avaliações: " + outroFilme.getTotalDeAvaliacoes());
+        System.out.println(meuFilme.pegaMedia());
 
         FiltroRecomendacao filtro = new FiltroRecomendacao();
         filtro.filtra(meuFilme);
